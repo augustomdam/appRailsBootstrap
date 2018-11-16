@@ -1,0 +1,29 @@
+<br>
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div id="notice" class="alert alert-success alert-dismissible fade show" role="alert">
+      <%= notice %>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <h1 class="text-center">Showing Aluno</h1>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @aluno.name %>
+    </p>
+
+    <p>
+      <strong>Matricula:</strong>
+      <%= @aluno.matricula %>
+    </p>
+    <div class="offset-md-4">
+      <%= link_to '', edit_aluno_path(@aluno), class: "btn btn-warning btn-lg fa fa-pencil" %> |
+      <%= link_to '', alunos_path, class: "btn btn-secondary btn-lg fa fa-undo" %>
+    </div>
+  </div>
+</div>
+<script>
+  $().alert('dispose');
+</script>

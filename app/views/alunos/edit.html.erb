@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <h1 class="text-center">Editing Aluno</h1>
+
+        <%= render 'form', aluno: @aluno %>
+        
+        <br>
+        <div class="offset-md-4">
+            <%= link_to '', @aluno, class: "btn btn-primary btn-lg fa fa-eye" %> |
+            <%= link_to '', alunos_path, class: "btn btn-secondary btn-lg fa fa-undo" %>
+        </div>
+    </div>
+</div>
